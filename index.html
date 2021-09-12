@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-bg">
+        <h1 class="logo-text">
+            SPLI<br>TTER
+        </h1>
+        <div class="main-content">
+            <form action="" class="form">
+            <label for="bill" class="label">Bill</label>
+            <input type="number" class="number-input" id="bill">
+
+            <!--Radio button section-->
+            <p class="label">Select Tip %</p>
+            <!-- <div class="button-cont">
+                <div class="tip-button" id="5%">5%</div>
+
+                <div class="tip-button" id="10%">10%</div>
+
+                <div class="tip-button" id="15%">15%</div>
+
+                <div class="tip-button" id="25%">25%</div>
+
+                <div class="tip-button" id="50%">50%</div>
+
+                <div class="tip-button" id="custom">Custom</div>
+            </div> -->
+
+           <div class="button-cont">
+                <input type="radio" name="tip-amount" class="tip-button" id="5%" value="5%">
+            <label for="5%">5%</label>
+
+            <input type="radio" name="tip-amount" class="tip-button" id="10%" value="10%">
+            <label for="10%">10%</label>
+
+            <input type="radio" name="tip-amount" class="tip-button" id="15%" value="15%">
+            <label for="15%">15%</label>
+
+            <input type="radio" name="tip-amount" class="tip-button" id="25%" value="25%">
+            <label for="25%">25%</label>
+
+            <input type="radio" name="tip-amount" class="tip-button" id="50%" value="50%">
+            <label for="50%">50%</label>
+
+            <input type="radio" name="tip-amount" class="tip-button" id="custom" value="custom">
+            <label for="custom">Custom</label>
+        
+            <label for="num-people" class="label">Number of People</label>
+            <input type="number" class="number-input" id="num-people">
+           </div>
+            </form>
+            </div>
+            <!--Result Section-->
+            <div class="results">
+                <div class="result-cont">
+                    <div class="result-person">
+                        <p class="results-header">Tip Amount</p>
+                        <p class="results-sub">/ person</p>
+                    </div>
+                    <div id="tip-display"></div>
+                </div>
+                <div class="result-cont">
+                <div class="result-person">
+                    <p class="results-header">Total</p>
+                    <p class="results-sub">/ person</p>
+                </div>
+                <div id="total-display"></div>
+                </div>
+
+                <button type="reset" class="button">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
